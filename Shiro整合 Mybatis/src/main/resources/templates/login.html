@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/login}">
+    <p th:text="${msg}" style="color: red;"></p>
+    用戶名:<input type="text" name="username"/><br/>
+    密碼:<input type="password" name="password"/><br/>
+
+    <!-- 記住我 -->
+    <!-- rememberme須和後台依樣 -->
+    <label>
+        <input type="checkbox" name="rememberme"> 記住我
+    </label>
+
+    <input type="submit" value="登入">
+</form>
+</body>
+</html>
